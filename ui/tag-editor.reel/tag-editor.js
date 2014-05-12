@@ -23,6 +23,6 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
         }
     },
     tags: {
-        value: null
+        value: []
     }
 });
