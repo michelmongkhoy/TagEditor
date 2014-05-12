@@ -12,6 +12,7 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     constructor: {
         value: function TagEditor() {
             this.super();
+            this.tags = [42,43,44,45];
         }
     },
     enterDocument: {
