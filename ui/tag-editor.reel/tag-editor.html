@@ -9,12 +9,42 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "bindings": {
+                "contentController": {"<-": "@rangeController"}
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="TagEditor">
+        <ul data-montage-id="repetition">
+            <li>
+                Item
+            </li>
+        </ul>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
