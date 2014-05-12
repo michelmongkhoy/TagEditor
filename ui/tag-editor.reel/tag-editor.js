@@ -18,9 +18,6 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     tags: {
         value: null
     },
-    inputField: {
-        value: null
-    },
     handleTextFieldAction: {
         value: function(event) {
             this.tags.push(event.detail.inputText);
