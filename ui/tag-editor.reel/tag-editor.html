@@ -10,9 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener"
-        },
         "rangeController": {
             "prototype": "montage/core/range-controller",
             "bindings": {
@@ -34,6 +31,12 @@
                 "element": {"#": "textField"},
                 "placeholderValue": "Text"
             },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ],
             "bindings": {
                 "detail.inputText": {"<-": "value"},
                 "detail.inputText2": {"<-": "@textField.value"}
