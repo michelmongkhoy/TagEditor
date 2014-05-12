@@ -15,6 +15,6 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
         }
     },
     tags: {
-        value: [42,43,44,45]
+        value: null
     }
 });
