@@ -10,7 +10,7 @@
                 "element": {"#": "owner"}
             },
             "bindings": {
-                "inputTextField": {"<-": "@textField"}
+                "inputTextField": {"<->": "@textField"}
             }
         },
         "rangeController": {
@@ -45,7 +45,8 @@
                 "placeholderValue": "Text"
             },
             "bindings": {
-                "detail.inputText": {"<-": "value"}
+                "detail.inputText": {"<-": "value"},
+                "value": {"<->": "@owner.inputText"}
             },
             "listeners": [
                 {
