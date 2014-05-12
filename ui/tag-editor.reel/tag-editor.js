@@ -18,7 +18,7 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     tags: {
         value: null
     },
-    inputText: {
+    inputField: {
         value: null
     },
     handleTextFieldAction: {
