@@ -2,5 +2,5 @@
     color: blue;
 }
 .TagButton:hover {
-    color: yellow;
+    text-decoration: line-through;
 }
