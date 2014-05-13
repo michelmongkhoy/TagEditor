@@ -1,4 +1,5 @@
 .tagTextField {
+    font-family: 'Alegreya', serif;
     outline: none;
     box-sizing: border-box;
     font-size: 100%; /* Override UA style. */
