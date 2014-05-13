@@ -1,6 +1,4 @@
 .TagTextField {
-    outline: none;
-    box-sizing: border-box;
     font-size: 100%; /* Override UA style. */
     width: 10em;
     height: 2.5em;
@@ -8,8 +6,4 @@
     vertical-align: middle;
     color: inherit;
     border: 0;
-    border-radius: .25em;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none; /* Removes inner shadow on iOS. */
 }
