@@ -15,7 +15,7 @@
 }
 
 
-/* States --------------------- */
+/* States --------------------- 
 
 .tagTextField:focus {
     box-shadow: inset 0 0 0 1px;
@@ -36,7 +36,7 @@
 }
 
 
-/* Placeholder --------------------- */
+ Placeholder --------------------- 
 
 .tagTextField::-webkit-input-placeholder { color: inherit; opacity: .5; }
 .tagTextField::-moz-placeholder { color: inherit; opacity: .5; }
@@ -44,7 +44,7 @@
 
 
 
-/* Wireframe ---------------------------------------------------------- */
+ Wireframe ---------------------------------------------------------- 
 
 [data-montage-skin="wireframe"] .tagTextField {
     color: #4D4D4D;
@@ -64,7 +64,7 @@
 
 
 
-/* Light ---------------------------------------------------------- */
+/* Light ---------------------------------------------------------- 
 
 [data-montage-skin="light"] .tagTextField {
     color: hsla(0,0%,0%,.7);
@@ -92,7 +92,7 @@
 
 
 
-/* Dark ---------------------------------------------------------- */
+/* Dark ---------------------------------------------------------- 
 
 [data-montage-skin="dark"] .tagTextField {
     color: hsla(0,0%,100%,.5);
@@ -117,4 +117,4 @@
 [data-montage-skin="dark"] .tagTextField:invalid {
     color: #FF6052;
     border-color: #FF6052;
-}
+}*/
