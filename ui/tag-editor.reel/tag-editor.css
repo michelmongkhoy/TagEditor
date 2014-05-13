@@ -12,7 +12,7 @@
     display: inline;
 }
 
-.TagEditor ul li .tag-button {
+.TagEditor ul li .TagButton {
     padding: 0;
     border: none;
     background: none;
