@@ -18,12 +18,12 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     tags: {
         value: null
     },
-    tagInputShouldAcceptValue: {
+    textFieldShouldAcceptValue: {
         value: function() {
             return true;
         }
     },
-    handleTagInputAction: {
+    handleTextFieldAction: {
         value: function(event) {
             this.tags.push(event.detail.inputValue);
             event.detail.inputValue = "";
