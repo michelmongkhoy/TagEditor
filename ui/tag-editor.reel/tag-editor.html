@@ -34,6 +34,22 @@
                     "listener": {"@": "owner"}
                 }
             ]
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            },
+            "bindings": {
+                "detail.inputValue": {"<->": "value"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+                ]
         }
     }
     </script>
@@ -47,6 +63,7 @@
         </ul>
         <div data-montage-id="tagInput"></div>
         <input data-montage-id="inputText" type="text">
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
