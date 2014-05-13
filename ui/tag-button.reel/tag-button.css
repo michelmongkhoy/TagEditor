@@ -1,5 +1,4 @@
 .TagButton {
-    color: #333333;
 }
 .TagButton:hover {
     text-decoration: line-through;
