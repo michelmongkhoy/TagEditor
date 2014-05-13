@@ -51,23 +51,6 @@
                     "listener": {"@": "owner"}
                 }
             ]
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
-            },
-            "bindings": {
-                "delegate": {"<-": "@owner"},
-                "detail.inputValue": {"<->": "value"}
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "listener": {"@": "owner"}
-                }
-            ]
         }
     }
     </script>
