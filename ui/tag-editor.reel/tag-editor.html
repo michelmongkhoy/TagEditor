@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="tag-editor.css">
-    <script type="text/montage-serialization">
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="tag-editor.css">
+        <script type="text/montage-serialization">
     {
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
-            }
-        },
-        "rangeController": {
-            "prototype": "montage/core/range-controller",
-            "bindings": {
-                "content": {"<-": "@owner.tags"}
             }
         },
         "repetition": {
@@ -22,27 +16,34 @@
                 "element": {"#": "repetition"}
             },
             "bindings": {
-                "contentController": {"<-": "@rangeController"}
+                "content": {"<-": "@owner.tags"}
             }
         },
-        "text": {
-            "prototype": "montage/ui/text.reel",
+        "tagButton": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "text"},
-                "value": "Text"
+                "element": {"#": "tagButton"}
             },
             "bindings": {
-                "value": {"<-": "@repetition:iteration.object"}
-            }
+                "label": {"<-": "@repetition:iteration.object"},
+                "detail.tagIndex": {"<-": "@repetition:iteration.index"}
+            },
+            "listeners": [
+                {
+                   "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
-        "textField": {
+        "tagInput": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
+                "element": {"#": "tagInput"},
+                "placeholderValue": "new tag"
             },
             "bindings": {
-                "value": {"<->": "@owner.inputText"}
+                "detail.inputValue": {"<->": "value"},
+                "delegate": {"<-": "@owner"}
             },
             "listeners": [
                 {
@@ -52,16 +53,16 @@
             ]
         }
     }
-    </script>
-</head>
-<body>
-    <div data-montage-id="owner" class="TagEditor">
-        <ul data-montage-id="repetition">
-            <li>
-                <p data-montage-id="text"></p>
-            </li>
-        </ul>
-        <input data-montage-id="textField" type="text">
-    </div>
-</body>
+        </script>
+    </head>
+    <body>
+        <div data-montage-id="owner" class="TagEditor">
+            <ul data-montage-id="repetition">
+                <li>
+                    <p data-montage-id="tagButton"></p>
+                </li>
+            </ul>
+            <input data-montage-id="tagInput" type="text">
+        </div>
+    </body>
 </html>
