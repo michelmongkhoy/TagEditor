@@ -9,6 +9,9 @@ var AbstractTextField = require("montage/ui/base/abstract-text-field").AbstractT
  * @extends Component
  */
 exports.TagTextField = AbstractTextField.specialize(/** @lends TagTextField# */ {
+     hasTemplate: {
+         value: true
+     },
     constructor: {
         value: function TagTextField() {
             this.super();
