@@ -8,6 +8,6 @@
     list-style-type: none;
 }
 
-.TagEditor ul li {
+.TagEditor * {
     display: inline;
 }
