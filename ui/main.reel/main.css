@@ -1,4 +1,6 @@
-.Main {}
+.Main {
+    font-family: 'Alegreya', serif;
+}
 
 .Main .TagBox {
     /* Center the tag editor */
