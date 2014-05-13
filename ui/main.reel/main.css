@@ -5,9 +5,6 @@
 
 .Main .TagBox {
     /* Center the tag editor */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
+    width: 50%;
+    margin: 0 auto;
 }
