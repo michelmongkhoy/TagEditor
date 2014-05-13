@@ -18,7 +18,7 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     tags: {
         value: null
     },
-    placeHolder: {
+    placeHolderText: {
         value: null
     },
     textFieldShouldAcceptValue: {
