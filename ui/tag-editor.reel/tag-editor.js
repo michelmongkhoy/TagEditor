@@ -12,23 +12,27 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     constructor: {
         value: function TagEditor() {
             this.super();
-            this.tags = ["42","43","44","45"];
+            this.tags = [];
         }
     },
     tags: {
         value: null
     },
-    inputTextField: {
-        value: null
+    tagInputShouldAcceptValue: {
+        value: function() {
+            return true;
+        }
     },
-    inputText: {
-        value: null
-    },
-    handleTextFieldAction: {
+    handleTagInputAction: {
         value: function(event) {
-            this.tags.push(this.inputText);
-    //        this.inputTextField.value = "";
-            this.inputText = "";
+            this.tags.push(event.detail.inputValue);
+            event.detail.inputValue = "";
+        }
+    },
+
+    handleTagButtonAction: {
+        value: function(event) {
+            this.tags.splice(event.detail.tagIndex, 1);
         }
     }
 });
