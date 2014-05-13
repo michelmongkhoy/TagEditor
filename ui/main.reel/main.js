@@ -16,5 +16,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     placeHolderText: {
         value: "write a tag..."
+    },
+    sampleTags: {
+        value: ["Developers", "code", "write", "compile", "debug", "fix", "crash", "wonder", "headache", "think", "Google it", "StackOverflow", "Ask", "Library", "GitHub", "Clone", "Branch", "Commit", "Merge", "Push", "Deliver"]
     }
 });
