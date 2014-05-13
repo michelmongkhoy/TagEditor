@@ -17,47 +17,47 @@
 
 /* States --------------------- */
 
-.digit-TextField:focus {
+.tagTextField:focus {
     box-shadow: inset 0 0 0 1px;
 }
 
-.digit-TextField.montage--disabled {
+.tagTextField.montage--disabled {
     opacity: .5;
     border-style: dashed;
     pointer-events: none;
 }
 
-.digit-TextField:invalid {
+.tagTextField:invalid {
     color: #E73525;
 }
 
-.digit-TextField[readonly] {
+.tagTextField[readonly] {
     background-color: #e5e5e5;
 }
 
 
 /* Placeholder --------------------- */
 
-.digit-TextField::-webkit-input-placeholder { color: inherit; opacity: .5; }
-.digit-TextField::-moz-placeholder { color: inherit; opacity: .5; }
-.digit-TextField:-ms-input-placeholder { color: inherit; opacity: .5; }
+.tagTextField::-webkit-input-placeholder { color: inherit; opacity: .5; }
+.tagTextField::-moz-placeholder { color: inherit; opacity: .5; }
+.tagTextField:-ms-input-placeholder { color: inherit; opacity: .5; }
 
 
 
 /* Wireframe ---------------------------------------------------------- */
 
-[data-montage-skin="wireframe"] .digit-TextField {
+[data-montage-skin="wireframe"] .tagTextField {
     color: #4D4D4D;
     border-color: #b3b3b3;
     background-color: #fff;
 }
 
-[data-montage-skin="wireframe"] .digit-TextField:focus {
+[data-montage-skin="wireframe"] .tagTextField:focus {
     border-color: #7f7f7f;
     box-shadow: none;
 }
 
-[data-montage-skin="wireframe"] .digit-TextField:invalid {
+[data-montage-skin="wireframe"] .tagTextField:invalid {
     color: #E73525;
     border-color: #E73525;
 }
@@ -66,7 +66,7 @@
 
 /* Light ---------------------------------------------------------- */
 
-[data-montage-skin="light"] .digit-TextField {
+[data-montage-skin="light"] .tagTextField {
     color: hsla(0,0%,0%,.7);
     text-shadow: 0 1px 0 hsla(0,0%,100%,.5);
     border-color: hsl(0,0%,80%);
@@ -79,13 +79,13 @@
     transform: translate3d(0px,0px,0px);
 }
 
-[data-montage-skin="light"] .digit-TextField:focus {
+[data-montage-skin="light"] .tagTextField:focus {
     border-color: hsla(0,0%,70%,1);
     background-image: -webkit-linear-gradient(top, hsl(0,0%,92%), hsl(0,0%,94%) );
     box-shadow: inset 0 1px 3px hsla(0,0%,0%,.1), 0 1px 0 hsla(0,0%,100%,.6);
 }
 
-[data-montage-skin="light"] .digit-TextField:invalid {
+[data-montage-skin="light"] .tagTextField:invalid {
     color: #E73525;
     border-color: #E73525;
 }
@@ -94,7 +94,7 @@
 
 /* Dark ---------------------------------------------------------- */
 
-[data-montage-skin="dark"] .digit-TextField {
+[data-montage-skin="dark"] .tagTextField {
     color: hsla(0,0%,100%,.5);
     text-shadow: 0 1px 0 hsla(0,0%,0%,.2);
     border-color: hsl(0,0%,15%);
@@ -107,14 +107,14 @@
     transform: translate3d(0px,0px,0px);
 }
 
-[data-montage-skin="dark"] .digit-TextField:focus {
+[data-montage-skin="dark"] .tagTextField:focus {
     color: hsla(0,0%,100%,.7);
     border-color: hsl(0,0%,15%);
     background-image: -webkit-linear-gradient(top, hsl(0,0%,26%), hsl(0,0%,28%) );
     box-shadow: inset 0 1px 3px hsla(0,0%,0%,.3), 0 1px 0 hsla(0,0%,100%,.1);
 }
 
-[data-montage-skin="dark"] .digit-TextField:invalid {
+[data-montage-skin="dark"] .tagTextField:invalid {
     color: #FF6052;
     border-color: #FF6052;
 }
