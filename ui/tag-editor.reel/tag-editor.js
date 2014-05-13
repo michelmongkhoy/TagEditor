@@ -19,7 +19,7 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
         value: null
     },
     _placeHolderText: {
-        value: null
+        value: "blablz"
     },
     placeHolderText: {
         get: function(){
