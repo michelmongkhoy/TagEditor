@@ -38,12 +38,12 @@
         "tagTextField": {
             "prototype": "ui/tag-text-field.reel",
             "properties": {
-                "element": {"#": "tagTextField"},
-                "placeholderValue": "coucou"
+                "element": {"#": "tagTextField"}
             },
             "bindings": {
                 "delegate": {"<-": "@owner"},
-                "detail.inputValue": {"<->": "value"}
+                "detail.inputValue": {"<->": "value"},
+                "placeholderValue": {"<-": "@owner.placeHolderText"}
             },
             "listeners": [
                 {
