@@ -39,12 +39,11 @@
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "tagInput"},
-                "placeholderValue": "new tag",
-                "delegate": {"<-": "@owner"}
+                "placeholderValue": "new tag"
             },
             "bindings": {
-                "detail.inputValue": {"<->": "value"}
-                
+                "detail.inputValue": {"<->": "value"},
+                "delegate": {"<-": "@owner"}
             },
             "listeners": [
                 {
