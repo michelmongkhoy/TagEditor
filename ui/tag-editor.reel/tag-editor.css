@@ -11,3 +11,9 @@
 .TagEditor ul li {
     display: inline;
 }
+
+.TagEditor ul li .digit-Button {
+    padding: 0;
+    border: none;
+    background: none;
+}
