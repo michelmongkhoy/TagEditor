@@ -8,6 +8,10 @@
     list-style-type: none;
 }
 
+.TagEditor li {
+    margin-right: 40px;
+}
+
 .TagEditor * {
     display: inline;
 }
