@@ -23,13 +23,23 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
             return true;
         }
     },
+    tagTextFieldShouldAcceptValue: {
+        value: function() {
+            return true;
+        }
+    },
     handleTextFieldAction: {
         value: function(event) {
             this.tags.push(event.detail.inputValue);
             event.detail.inputValue = "";
         }
     },
-
+    handleTagTextFieldAction: {
+        value: function(event) {
+            this.tags.push(event.detail.inputValue);
+            event.detail.inputValue = "";
+        }
+    },
     handleTagButtonAction: {
         value: function(event) {
             this.tags.splice(event.detail.tagIndex, 1);
