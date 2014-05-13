@@ -23,7 +23,7 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     },
     placeHolderText: {
         get: function(){
-            return _placeHolderText;
+            return this._placeHolderText;
         },
         set: function(value) {
             if (this._placeHolderText !== value) {
