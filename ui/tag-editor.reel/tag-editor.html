@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="tag-editor.css">
-        <script type="text/montage-serialization">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="tag-editor.css">
+    <script type="text/montage-serialization">
     {
         "owner": {
             "properties": {
@@ -25,22 +25,21 @@
                 "element": {"#": "tagButton"}
             },
             "bindings": {
-                "label": {"<-": "@repetition:iteration.object"},
-                "detail.tagIndex": {"<-": "@repetition:iteration.index"}
+                "detail.tagIndex": {"<-": "@repetition:iteration.index"},
+                "label": {"<-": "@repetition:iteration.object"}
             },
             "listeners": [
                 {
-                   "type": "action",
+                    "type": "action",
                     "listener": {"@": "owner"}
                 }
             ]
         },
         "tagInput": {
-            "prototype": "native/ui/input-text.reel",
+            "prototype": "matte/ui/input-text.reel",
             "properties": {
                 "element": {"#": "tagInput"},
-                "placeholderValue": "new tag",
-                "delegate": {"@": "owner"}
+                "placeholderValue": "new tag"
             },
             "bindings": {
                 "detail.inputValue": {"<->": "value"}
@@ -53,16 +52,16 @@
             ]
         }
     }
-        </script>
-    </head>
-    <body>
-        <div data-montage-id="owner" class="TagEditor">
-            <ul data-montage-id="repetition">
-                <li>
-                    <button data-montage-id="tagButton"></button>
-                </li>
-            </ul>
-            <input data-montage-id="tagInput" type="text">
-        </div>
-    </body>
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="TagEditor">
+        <ul data-montage-id="repetition">
+            <li>
+                <button data-montage-id="tagButton"></button>
+            </li>
+        </ul>
+        <input data-montage-id="tagInput" type="text">
+    </div>
+</body>
 </html>
