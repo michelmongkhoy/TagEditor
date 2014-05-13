@@ -35,6 +35,12 @@
                 }
             ]
         },
+        "tagTextField": {
+            "prototype": "ui/tag-text-field.reel",
+            "properties": {
+                "element": {"#": "tagTextField"}
+            }
+        },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
@@ -42,8 +48,8 @@
                 "placeholderValue": "Text"
             },
             "bindings": {
-                "detail.inputValue": {"<->": "value"},
-                "delegate": {"<-": "@owner"}
+                "delegate": {"<-": "@owner"},
+                "detail.inputValue": {"<->": "value"}
             },
             "listeners": [
                 {
@@ -63,6 +69,7 @@
             </li>
         </ul>
         <input data-montage-id="textField" type="text">
+        <div data-montage-id="tagTextField"></div>
     </div>
 </body>
 </html>
