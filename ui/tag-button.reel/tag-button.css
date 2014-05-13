@@ -1,3 +1,6 @@
 .TagButton {
     color: blue;
 }
+.TagButton:hover {
+    color: yellow;
+}
