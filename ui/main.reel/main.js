@@ -13,5 +13,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    placeHolderText: {
+        value: "write a tag..."
     }
 });
