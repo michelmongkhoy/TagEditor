@@ -39,7 +39,17 @@
             "prototype": "ui/tag-text-field.reel",
             "properties": {
                 "element": {"#": "tagTextField"}
-            }
+            },
+            "bindings": {
+                "delegate": {"<-": "@owner"},
+                "detail.inputValue": {"<->": "value"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
