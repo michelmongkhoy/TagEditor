@@ -18,8 +18,19 @@ exports.TagEditor = Component.specialize(/** @lends TagEditor# */ {
     tags: {
         value: null
     },
-    placeHolderText: {
+    _placeHolderText: {
         value: null
+    },
+    placeHolderText: {
+        get: function(){
+            return _placeHolderText;
+        },
+        set: function(value) {
+            if (this._placeHolderText !== value) {
+                this._placeHolderText = value;
+                this.needsDraw = true;
+            }
+        }
     },
     textFieldShouldAcceptValue: {
         value: function() {
