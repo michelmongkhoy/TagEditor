@@ -10,6 +10,22 @@
                 "element": {"#": "owner"}
             }
         },
+        "inputText": {
+            "prototype": "matte/ui/input-text.reel",
+            "properties": {
+                "element": {"#": "inputText"},
+                "value": "Text"
+            },
+            "bindings": {
+                "detail.inputValue": {"<->": "value"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+                ]
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -46,6 +62,7 @@
             </li>
         </ul>
         <div data-montage-id="tagInput"></div>
+        <input data-montage-id="inputText" type="text">
     </div>
 </body>
 </html>
